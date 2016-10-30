@@ -26,14 +26,14 @@ socket.on('reconnect', function () {
 });
 
 function message (from, msg) {
-  console.log(msg);
-  if(msg.txt){
-    $('#lines').append($('<p>').append($('<b>').text(from), msg.txt));
-  }
+ /* console.log(msg);
+   if(msg.txt){
+   $('#lines').append($('<p>').append($('<b>').text(from), msg.txt));
+   }*/
 
   if(msg.img){
-    var tag = '<img class="pic-message" id="chat-image" src="'+msg.img+'" />';
-    $('#lines').append($('<p>').append($('<b>').text(from), tag));
+    var tag = '<div class="talkbubble"><img class="pic-message" id="chat-image" src="'+msg.img+'" /></div>';
+    $('#lines').append($('<p>').append(tag));
   }
 }
 

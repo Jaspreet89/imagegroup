@@ -1,3 +1,30 @@
+.talkbubble {
+  width: 120px;
+  height: 80px;
+  background: black;
+  position: relative;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+.talkbubble:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  
+  border-top: 13px solid transparent;
+  border-right: 26px solid black;
+  border-bottom: 13px solid transparent;
+}
+.pic-message{
+  margin-left:6px;
+  width:108px;
+  height:70px;
+  margin-top:5px;
+}
 #chat,
 #nickname,
 #messages {
@@ -7,10 +34,6 @@
   position: relative;
   border: 1px solid #ccc;
   margin:auto;
-}
-.pic-message{
-  width: 100px;
-
 }
 
 #nickname,
