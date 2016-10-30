@@ -1,0 +1,15 @@
+{
+    "name": "chat-node"
+  , "description": "chat application with features like image message"
+  , "version": "0.0.1"
+  , "dependencies": {
+        "express": "2.5.5"
+      , "socket.io-client": "0.9.11"
+      , "socket.io": "*"
+      , "ejs" : "*"
+    }
+  , "engines": {
+      "node": "0.6.13",
+      "npm": "1.1.41"
+  }
+}
