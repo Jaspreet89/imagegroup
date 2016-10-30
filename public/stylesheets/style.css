@@ -10,11 +10,11 @@
 .talkbubble:before {
   content:"";
   position: absolute;
-  right: 100%;
+  right: 86%;
   top: 26px;
   width: 0;
   height: 0;
-  
+
   border-top: 13px solid transparent;
   border-right: 26px solid black;
   border-bottom: 13px solid transparent;
@@ -25,11 +25,7 @@
   height:70px;
   margin-top:5px;
 }
-#chat,
-#nickname,
-#messages {
-  width: 600px;
-}
+
 #chat {
   position: relative;
   border: 1px solid #ccc;
@@ -39,7 +35,6 @@
 #nickname,
 #connecting {
   position: absolute;
-  height: 600px;
   z-index: 100;
   left: 0;
   top: 0;
@@ -73,10 +68,7 @@
 .nickname-set #nickname {
   display: none;
 }
-#messages {
-  height: 380px;
-  background: #eee;
-}
+
 #messages em {
   text-shadow: 0 1px 0 #fff;
   color: #999;
@@ -113,12 +105,7 @@
   border-radius: 10px;
   text-shadow: 0 1px 0 #666;
 }
-#messages #lines {
-  height: 355px;
-  overflow: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
+
 #messages #lines::-webkit-scrollbar {
   width: 6px;
   height: 6px;

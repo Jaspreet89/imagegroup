@@ -6,6 +6,10 @@
 <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script>
+ $(function(){
+   $('#messages').height($(window).height());
+ });
+
 // socket.io specific code
 var socket = io.connect();
 socket.on('connect', function () {
@@ -92,8 +96,8 @@ $("#image-button").click(function () {
     $('#list').html('');
     message('me', data);
 
- 
-    
+
+
     //socket.emit('user message', $('#message').val());
 
     console.log(data);
@@ -129,7 +133,7 @@ $("#image-button").click(function () {
       <div id="lines"></div>
     </div>
     <form id="send-message">
-      <input id="message">
+      <!--<input id="message">-->
 
       <div id="image-button"><img style="display:block" src="/stylesheets/add.jpg" /></div>
       <button id="message-button" class="button">Send</button>
